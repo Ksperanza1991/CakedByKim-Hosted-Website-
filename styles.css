@@ -1835,3 +1835,20 @@ footer strong {
 }
 
 /* PUBLISHED CUSTOMER REVIEWS END */
+
+/* AUTOMATIC REVIEW FEED START */
+
+.approved-review-feed {
+  display: grid;
+  gap: 24px;
+}
+
+.approved-review-feed:empty {
+  display: none;
+}
+
+.dynamic-review-card blockquote p {
+  white-space: pre-line;
+}
+
+/* AUTOMATIC REVIEW FEED END */

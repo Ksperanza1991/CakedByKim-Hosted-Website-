@@ -240,6 +240,7 @@
 
     <div class="reviews-layout">
       <div class="approved-reviews">
+        <div id="approved-review-feed" class="approved-review-feed" aria-live="polite"></div>
 
         <article class="customer-review-card">
           <div class="customer-review-stars" aria-label="5 out of 5 stars">
@@ -282,21 +283,10 @@
       <form
         id="review-form"
         class="review-form"
-        action="https://formsubmit.co/orders@cakedbykim.com"
+        action="https://script.google.com/macros/s/AKfycby_zcaCX1fHG-5uvWzQYzXtwD6LfEys-xc9yO-aty6pngAum5gDHccCNM2V3nLhnxv8mQ/exec"
         method="POST"
       >
-        <input
-          type="hidden"
-          name="_subject"
-          value="New CakedByKim Customer Review"
-        >
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
-        <input
-          type="hidden"
-          name="_next"
-          value="https://cakedbykim.com/#reviews"
-        >
+        <input type="hidden" name="form_type" value="review">
 
         <div class="review-form-heading">
           <p class="eyebrow">Leave a review</p>
