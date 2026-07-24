@@ -995,3 +995,158 @@ footer p {
 .gallery-grid:empty {
   display: none !important;
 }
+
+/* CBK BRAND + HERO + ABOUT REFINEMENT START */
+
+.brand {
+  gap: 16px !important;
+}
+
+.brand img {
+  width: 74px !important;
+  height: 74px !important;
+  border-radius: 50% !important;
+}
+
+.brand-wordmark {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  line-height: 1 !important;
+}
+
+.brand-wordmark strong {
+  display: flex !important;
+  align-items: flex-end !important;
+  gap: 8px !important;
+  line-height: 0.95 !important;
+}
+
+.brand-script {
+  font-family: "Sacramento", cursive !important;
+  font-size: clamp(34px, 4vw, 52px) !important;
+  font-weight: 400 !important;
+  color: var(--ink) !important;
+}
+
+.brand-serif {
+  font-family: "Playfair Display", serif !important;
+  font-size: clamp(28px, 3vw, 44px) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.03em !important;
+  color: var(--ink) !important;
+}
+
+.brand-wordmark small {
+  margin-top: 8px !important;
+  color: var(--muted) !important;
+  font-size: 12px !important;
+  letter-spacing: 0.18em !important;
+}
+
+.hero-card {
+  left: 5% !important;
+  bottom: 48px !important;
+  width: min(430px, 82vw) !important;
+  padding: 28px 30px !important;
+  background: rgba(255, 253, 250, 0.96) !important;
+  box-shadow: 0 18px 42px rgba(38, 40, 39, 0.14) !important;
+}
+
+.hero-card .eyebrow {
+  font-size: 10px !important;
+  letter-spacing: 0.18em !important;
+  margin-bottom: 10px !important;
+}
+
+.hero-card h1 {
+  font-size: clamp(38px, 4.5vw, 58px) !important;
+  line-height: 0.98 !important;
+}
+
+.hero-card h1 em {
+  font-family: "Sacramento", cursive !important;
+  font-weight: 400 !important;
+  font-size: 0.95em !important;
+}
+
+.hero-card > p {
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  margin: 14px 0 18px !important;
+}
+
+.hero-actions .button {
+  font-size: 13px !important;
+  padding: 10px 16px !important;
+}
+
+.script-label {
+  font-size: 44px !important;
+  color: #6e887f !important;
+}
+
+.about-detail .eyebrow {
+  margin-bottom: 10px !important;
+}
+
+.about-detail h2 {
+  font-size: clamp(54px, 6vw, 82px) !important;
+  line-height: 1.02 !important;
+  max-width: 780px !important;
+}
+
+.about-detail p {
+  font-size: 18px !important;
+  line-height: 1.8 !important;
+  max-width: 760px !important;
+}
+
+@media (max-width: 700px) {
+  .brand img {
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+  .brand-wordmark strong {
+    gap: 5px !important;
+  }
+
+  .brand-script {
+    font-size: 30px !important;
+  }
+
+  .brand-serif {
+    font-size: 24px !important;
+  }
+
+  .brand-wordmark small {
+    font-size: 10px !important;
+    letter-spacing: 0.12em !important;
+  }
+
+  .hero-card {
+    width: min(360px, calc(100% - 28px)) !important;
+    left: 14px !important;
+    bottom: 20px !important;
+    padding: 22px !important;
+  }
+
+  .hero-card h1 {
+    font-size: 34px !important;
+  }
+
+  .hero-card > p {
+    font-size: 14px !important;
+  }
+
+  .about-detail h2 {
+    font-size: 42px !important;
+  }
+
+  .about-detail p {
+    font-size: 16px !important;
+  }
+}
+
+/* CBK BRAND + HERO + ABOUT REFINEMENT END */
