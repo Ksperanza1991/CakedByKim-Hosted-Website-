@@ -1746,3 +1746,12 @@ footer strong {
 }
 
 /* CUSTOMER REVIEWS END */
+
+/* HERO BOX COLOR FIX START */
+
+.hero-card {
+  background: #f7f3ea !important;
+  opacity: 1 !important;
+}
+
+/* HERO BOX COLOR FIX END */
