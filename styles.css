@@ -146,9 +146,9 @@ a {
   position: absolute;
   left: 6%;
   bottom: 70px;
-  width: min(430px, 82vw);
-  padding: 28px 30px;
-  background: rgba(255, 253, 250, 0.90);
+  width: min(520px, 88vw);
+  padding: 42px;
+  background: rgba(255, 253, 250, 0.93);
   box-shadow: var(--shadow);
 }
 
@@ -736,9 +736,9 @@ footer p {
 
   .hero-card {
     left: 18px;
-    bottom: 30px;
-    width: calc(100% - 60px);
-    padding: 22px;
+    bottom: 40px;
+    width: calc(100% - 36px);
+    padding: 28px;
   }
 
   .menu-brand img {
@@ -835,66 +835,101 @@ footer p {
   }
 }
 
-/* HERO CARD HALF SIZE START */
+/* V8 HERO AND GALLERY FIX START */
 
 .hero-card {
   left: 5% !important;
-  bottom: 50px !important;
-  width: min(360px, 72vw) !important;
-  padding: 20px 22px !important;
-  background: rgba(255, 253, 250, 0.90) !important;
+  bottom: 42px !important;
+  width: min(325px, 68vw) !important;
+  padding: 17px 19px !important;
+  background: rgba(255, 253, 250, 0.985) !important;
+  box-shadow: 0 16px 38px rgba(38, 40, 39, 0.14) !important;
 }
 
 .hero-card .eyebrow {
-  margin-bottom: 7px !important;
-  font-size: 9px !important;
+  margin-bottom: 5px !important;
+  font-size: 8px !important;
   letter-spacing: 0.14em !important;
 }
 
 .hero-card h1 {
-  font-size: clamp(34px, 4vw, 47px) !important;
-  line-height: 0.98 !important;
+  font-size: clamp(30px, 3.7vw, 42px) !important;
+  line-height: 0.96 !important;
 }
 
 .hero-card h1 em {
-  font-size: 0.95em !important;
+  font-size: 0.92em !important;
 }
 
 .hero-card > p {
-  margin: 12px 0 16px !important;
-  font-size: 14px !important;
-  line-height: 1.5 !important;
+  margin: 9px 0 13px !important;
+  font-size: 12px !important;
+  line-height: 1.45 !important;
 }
 
 .hero-actions {
-  gap: 8px !important;
+  gap: 7px !important;
 }
 
 .hero-actions .button {
-  padding: 9px 15px !important;
-  font-size: 12px !important;
+  padding: 7px 12px !important;
+  font-size: 10px !important;
+}
+
+.gallery-grid {
+  columns: 4 245px !important;
+  column-gap: 16px !important;
+}
+
+.gallery-card {
+  display: inline-block !important;
+  width: 100% !important;
+  margin: 0 0 16px !important;
+  overflow: hidden !important;
+  break-inside: avoid !important;
+  border-radius: 18px !important;
+  background: #fffdfa !important;
+}
+
+.gallery-card img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: center !important;
 }
 
 @media (max-width: 620px) {
   .hero-card {
-    left: 16px !important;
-    bottom: 24px !important;
-    width: min(315px, calc(100% - 32px)) !important;
-    padding: 18px 19px !important;
+    left: 14px !important;
+    bottom: 20px !important;
+    width: min(280px, calc(100% - 28px)) !important;
+    padding: 15px 16px !important;
   }
 
   .hero-card h1 {
-    font-size: 36px !important;
+    font-size: 31px !important;
   }
 
   .hero-card > p {
-    font-size: 13px !important;
+    font-size: 11px !important;
   }
 
   .hero-actions .button {
-    padding: 8px 13px !important;
-    font-size: 11px !important;
+    padding: 7px 10px !important;
+    font-size: 9px !important;
+  }
+
+  .gallery-grid {
+    columns: 2 145px !important;
+    column-gap: 10px !important;
+  }
+
+  .gallery-card {
+    margin-bottom: 10px !important;
+    border-radius: 13px !important;
   }
 }
 
-/* HERO CARD HALF SIZE END */
+/* V8 HERO AND GALLERY FIX END */

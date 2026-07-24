@@ -1,23 +1,21 @@
-# CakedByKim Website v7 — Full Gallery Cleaned
+# CakedByKim Website v8
 
-This version restores the full bakery gallery and updates it so the text-overlay photos are cleaned and cropped instead of removed.
+Changes included:
 
-Included:
-- All supplied bakery gallery photos restored
-- Text-overlay images cleaned/cropped for display without text
-- Original clean layout preserved
-- Blank menu thumbnails preserved for future replacements
-- Instagram links updated to:
-  https://www.instagram.com/__cakedbykim?igsh=Z3UweWd3YWlmaXVq&utm_source=qr
-- Order email preserved as orders@cakedbykim.com
-- Custom domain preserved in CNAME
+- Gallery images preserve their natural product composition
+- Photos are no longer forced into matching landscape crops
+- Promotional text is removed through careful cropping
+- Hero white box is smaller and more opaque
+- Every Instagram link uses the exact shared page URL supplied by Kim
+- Menu thumbnails remain blank
+- orders@cakedbykim.com and CNAME are preserved
 
 ## Deploy
 
-Copy these files into the root of the GitHub repository, then run:
+Copy the extracted contents into the root of the repository, then run:
 
 ```bash
 git add -A
-git commit -m "Restore full gallery and clean text overlay photos"
+git commit -m "Fix gallery cropping Instagram link and hero box"
 git push origin main
 ```
