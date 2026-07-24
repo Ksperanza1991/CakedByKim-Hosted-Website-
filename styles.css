@@ -146,9 +146,9 @@ a {
   position: absolute;
   left: 6%;
   bottom: 70px;
-  width: min(520px, 88vw);
-  padding: 42px;
-  background: rgba(255, 253, 250, 0.93);
+  width: min(430px, 82vw);
+  padding: 28px 30px;
+  background: rgba(255, 253, 250, 0.90);
   box-shadow: var(--shadow);
 }
 
@@ -736,9 +736,9 @@ footer p {
 
   .hero-card {
     left: 18px;
-    bottom: 40px;
-    width: calc(100% - 36px);
-    padding: 28px;
+    bottom: 30px;
+    width: calc(100% - 60px);
+    padding: 22px;
   }
 
   .menu-brand img {
