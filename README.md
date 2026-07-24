@@ -1,39 +1,39 @@
-# CakedByKim Website — Version 2
+# CakedByKim Website v3
 
-This version includes your real CakedByKim photos, corrected Instagram links, a brighter playful color palette, menu product photography, and your logo above the menu.
+## Final product mapping used
 
-## Publish to GitHub Pages
+### Cookies
+- The OG — Brown Butter Chocolate Chip — `the-og.jpg`, cropped from the approved `hero.jpg`
+- The Favorite — White Chocolate Raspberry — `favorite-main.jpg` and approved supporting photo `favorite-alt.jpg`
+- The Obsession — Triple Chocolate Brownie — `the-obsession.jpg`, cropped from the approved `hero.jpg`
+- The Crunch — Cookies & Cream — temporary concept image until a real photo is provided
+- The Soft One — Vanilla Bean Sugar Cookie — `soft-one.jpg`, using the newly supplied photo
 
-Upload the contents of this folder to the root of your existing GitHub repository:
+### Cupcakes
+- The Classic — Vanilla Bean — cropped from `cupcake-box.jpg`
+- The Midnight — Chocolate Fudge — cropped from `cupcake-box.jpg`
+- The Dream — Strawberry Shortcake — `dream.jpg`, supplied as `strawberry-box.jpg`
+- The Crush — Lemon Strawberry — `lemon-strawberry.jpg`
+- The Bloom — Cookies & Cream — temporary concept image until a real photo is provided
 
-- index.html
-- styles.css
-- script.js
-- images folder
+## Contact details
+- Order email: orders@cakedbykim.com
+- Instagram: https://www.instagram.com/__cakedbykim/
 
-Replace the previous files, then commit the changes. GitHub Pages will deploy the update automatically.
+## Deploy
+Replace the following files in the root of the existing GitHub repository:
 
-## Important form update
+- `index.html`
+- `styles.css`
+- `script.js`
+- the entire `images` directory
 
-The order form currently contains the placeholder email:
+Then commit and push:
 
-hello@cakedbykim.com
+```bash
+git add index.html styles.css script.js images
+git commit -m "Redesign CakedByKim boutique bakery website"
+git push origin main
+```
 
-Replace it in index.html with the email address where you want order requests delivered.
-
-## Instagram
-
-All links use:
-
-https://www.instagram.com/__cakedbykim/
-
-## Photo preparation
-
-The included website copies have been:
-- cropped to consistent web-friendly sizes
-- slightly brightened
-- contrast adjusted
-- sharpened gently
-- compressed for better website performance
-
-Your original uploads remain unchanged.
+GitHub Pages should automatically redeploy the site.
