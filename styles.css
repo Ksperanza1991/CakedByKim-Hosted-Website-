@@ -1150,3 +1150,132 @@ footer p {
 }
 
 /* CBK BRAND + HERO + ABOUT REFINEMENT END */
+
+/* CAKEDBYKIM SITE-WIDE FONTS START */
+
+body,
+p,
+a,
+label,
+input,
+textarea,
+select,
+button,
+.menu-copy h4,
+.menu-copy p,
+.steps p,
+.contact-form,
+.pricing-note,
+footer {
+  font-family: "Playfair Display", serif !important;
+}
+
+.site-nav a,
+.eyebrow,
+.brand-wordmark small,
+.menu-tab,
+.button,
+.menu-number,
+.steps h3,
+.menu-copy h3,
+.pricing-note a,
+.gallery-instagram,
+.about-detail a {
+  font-family: "Playfair Display", serif !important;
+}
+
+.brand-wordmark {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  line-height: 1 !important;
+}
+
+.brand-wordmark strong {
+  font-family: "Sacramento", cursive !important;
+  font-size: clamp(45px, 5vw, 64px) !important;
+  font-weight: 400 !important;
+  line-height: 0.9 !important;
+  letter-spacing: 0 !important;
+  color: var(--ink) !important;
+}
+
+.brand-wordmark small {
+  margin-top: 10px !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.16em !important;
+  line-height: 1.25 !important;
+}
+
+.hero-card h1,
+.section-heading h2,
+.about-detail h2,
+.contact-copy h2,
+.script-label {
+  font-family: "Sacramento", cursive !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+}
+
+.hero-card h1 {
+  font-size: clamp(48px, 5.5vw, 70px) !important;
+  line-height: 0.92 !important;
+}
+
+.hero-card h1 em {
+  font-family: inherit !important;
+  font-style: normal !important;
+  font-size: inherit !important;
+}
+
+.section-heading h2,
+.contact-copy h2 {
+  font-size: clamp(62px, 8vw, 96px) !important;
+  line-height: 0.9 !important;
+}
+
+.about-detail h2 {
+  font-size: clamp(66px, 8vw, 104px) !important;
+  line-height: 0.88 !important;
+}
+
+.script-label {
+  font-size: 48px !important;
+  line-height: 1 !important;
+}
+
+.menu-copy h3,
+.steps h3 {
+  font-weight: 700 !important;
+}
+
+@media (max-width: 700px) {
+  .brand-wordmark strong {
+    font-size: 40px !important;
+  }
+
+  .brand-wordmark small {
+    font-size: 9px !important;
+    letter-spacing: 0.1em !important;
+  }
+
+  .hero-card h1 {
+    font-size: 45px !important;
+  }
+
+  .section-heading h2,
+  .contact-copy h2 {
+    font-size: 58px !important;
+  }
+
+  .about-detail h2 {
+    font-size: 62px !important;
+  }
+
+  .script-label {
+    font-size: 40px !important;
+  }
+}
+
+/* CAKEDBYKIM SITE-WIDE FONTS END */
