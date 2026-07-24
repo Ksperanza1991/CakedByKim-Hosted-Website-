@@ -1750,8 +1750,10 @@ footer strong {
 /* HERO BOX COLOR FIX START */
 
 .hero-card {
-  background: #f7f3ea !important;
+  background: rgba(241, 235, 222, 0.72) !important;
   opacity: 1 !important;
+  backdrop-filter: blur(3px) !important;
+  -webkit-backdrop-filter: blur(3px) !important;
 }
 
 /* HERO BOX COLOR FIX END */
