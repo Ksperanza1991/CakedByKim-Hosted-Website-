@@ -1,69 +1,39 @@
-# CakedByKim Website
+# CakedByKim Website — Version 2
 
-This is a complete, responsive one-page website built with plain HTML, CSS, and JavaScript.
+This version includes your real CakedByKim photos, corrected Instagram links, a brighter playful color palette, menu product photography, and your logo above the menu.
 
-## Preview the website
+## Publish to GitHub Pages
 
-Open `index.html` in any modern web browser.
+Upload the contents of this folder to the root of your existing GitHub repository:
 
-For the most accurate local preview, run:
+- index.html
+- styles.css
+- script.js
+- images folder
 
-```bash
-python3 -m http.server 8000
-```
+Replace the previous files, then commit the changes. GitHub Pages will deploy the update automatically.
 
-Then open `http://localhost:8000`.
+## Important form update
 
-## Before publishing
+The order form currently contains the placeholder email:
 
-1. Replace `hello@cakedbykim.com` in `index.html` with the real business email.
-2. Update the FormSubmit address in the contact form:
-   `https://formsubmit.co/hello@cakedbykim.com`
-3. Review all menu descriptions and pricing language.
-4. Replace the sample gallery panels with your real product photos.
-5. Confirm pickup area, payment policy, and lead-time details.
+hello@cakedbykim.com
 
-## Add your own gallery photos
+Replace it in index.html with the email address where you want order requests delivered.
 
-Create an `images` folder beside `index.html`, then add photos such as:
+## Instagram
 
-- `triple-chocolate.jpg`
-- `vanilla-cupcakes.jpg`
-- `strawberry-cupcakes.jpg`
-- `dessert-box.jpg`
-- `chocolate-chip-cookie.jpg`
+All links use:
 
-In `styles.css`, replace each sample background with:
+https://www.instagram.com/__cakedbykim/
 
-```css
-.photo-chocolate {
-  background-image: url("images/triple-chocolate.jpg");
-}
-```
+## Photo preparation
 
-Repeat for `.photo-vanilla`, `.photo-strawberry`, `.photo-box`, and `.photo-cookie`.
+The included website copies have been:
+- cropped to consistent web-friendly sizes
+- slightly brightened
+- contrast adjusted
+- sharpened gently
+- compressed for better website performance
 
-## Publishing options
-
-You can publish this folder using:
-
-- GitHub Pages
-- Netlify
-- Vercel
-- Squarespace custom code
-- Shopify custom theme development
-- Any standard website host
-
-## Included
-
-- Mobile navigation
-- Hero section
-- Weekly-special announcement
-- Cookie, cupcake, and extras menu tabs
-- Gallery
-- About section
-- Ordering process
-- Contact/order request form
-- Instagram links
-- Responsive mobile design
-- Basic accessibility support
+Your original uploads remain unchanged.
