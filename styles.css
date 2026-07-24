@@ -1278,3 +1278,91 @@ footer strong {
 }
 
 /* CAKEDBYKIM NUMBER 9 FONT END */
+
+/* MOBILE HERO REFINEMENT START */
+
+@media (max-width: 700px) {
+  .hero {
+    min-height: 850px !important;
+    height: auto !important;
+  }
+
+  .hero-photo {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: 70% center !important;
+  }
+
+  .hero-overlay {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(28, 31, 31, 0.08),
+        rgba(28, 31, 31, 0.01) 60%,
+        rgba(28, 31, 31, 0.08)
+      ) !important;
+  }
+
+  .hero-card {
+    top: 300px !important;
+    bottom: auto !important;
+    left: 18px !important;
+    width: calc(100% - 36px) !important;
+    max-width: 370px !important;
+    padding: 22px 23px !important;
+    background: rgba(255, 253, 250, 0.95) !important;
+    box-shadow: 0 16px 36px rgba(38, 40, 39, 0.15) !important;
+  }
+
+  .hero-card .eyebrow {
+    margin-bottom: 8px !important;
+    font-size: 9px !important;
+    letter-spacing: 0.16em !important;
+  }
+
+  .hero-card h1 {
+    font-size: 39px !important;
+    line-height: 0.98 !important;
+  }
+
+  .hero-card > p {
+    margin: 13px 0 17px !important;
+    font-size: 14px !important;
+    line-height: 1.55 !important;
+  }
+
+  .hero-actions {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 9px !important;
+  }
+
+  .hero-actions .button {
+    padding: 9px 14px !important;
+    font-size: 11px !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .hero {
+    min-height: 820px !important;
+  }
+
+  .hero-card {
+    top: 270px !important;
+    left: 14px !important;
+    width: calc(100% - 28px) !important;
+    padding: 19px !important;
+  }
+
+  .hero-card h1 {
+    font-size: 35px !important;
+  }
+
+  .hero-card > p {
+    font-size: 13px !important;
+  }
+}
+
+/* MOBILE HERO REFINEMENT END */
