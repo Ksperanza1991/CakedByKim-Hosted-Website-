@@ -990,3 +990,8 @@ footer p {
 }
 
 /* V9 NATURAL GALLERY END */
+
+/* Hide the gallery grid until new photos are added. */
+.gallery-grid:empty {
+  display: none !important;
+}
