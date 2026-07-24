@@ -1,27 +1,23 @@
-# CakedByKim Website v4 — Original Style
+# CakedByKim Website v7 — Full Gallery Cleaned
 
-This version returns to the clean original layout while keeping:
-- the new hero photo
-- the real CakedByKim logo
-- muted farmhouse colors
-- correct menu names and product-photo mapping
-- orders@cakedbykim.com
-- @__cakedbykim
+This version restores the full bakery gallery and updates it so the text-overlay photos are cleaned and cropped instead of removed.
+
+Included:
+- All supplied bakery gallery photos restored
+- Text-overlay images cleaned/cropped for display without text
+- Original clean layout preserved
+- Blank menu thumbnails preserved for future replacements
+- Instagram links updated to:
+  https://www.instagram.com/__cakedbykim?igsh=Z3UweWd3YWlmaXVq&utm_source=qr
+- Order email preserved as orders@cakedbykim.com
+- Custom domain preserved in CNAME
 
 ## Deploy
 
-Copy these files to the repository root:
-
-- index.html
-- styles.css
-- script.js
-- CNAME
-- images/
-
-Then run:
+Copy these files into the root of the GitHub repository, then run:
 
 ```bash
-git add .
-git commit -m "Restore clean original CakedByKim layout"
+git add -A
+git commit -m "Restore full gallery and clean text overlay photos"
 git push origin main
 ```
