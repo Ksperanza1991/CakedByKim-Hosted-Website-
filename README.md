@@ -1,21 +1,18 @@
-# CakedByKim Website v8
+# CakedByKim Website v9
 
-Changes included:
-
-- Gallery images preserve their natural product composition
-- Photos are no longer forced into matching landscape crops
-- Promotional text is removed through careful cropping
-- Hero white box is smaller and more opaque
-- Every Instagram link uses the exact shared page URL supplied by Kim
-- Menu thumbnails remain blank
-- orders@cakedbykim.com and CNAME are preserved
+Changes:
+- Removed the menu thumbnail explanation sentence
+- Rebuilt every gallery image at its natural aspect ratio
+- Removed fixed landscape/square gallery cropping
+- Preserved the smaller opaque hero card
+- Updated Instagram links to the clean profile URL
+- Kept menu thumbnails blank
+- Preserved orders@cakedbykim.com and CNAME
 
 ## Deploy
 
-Copy the extracted contents into the root of the repository, then run:
-
 ```bash
 git add -A
-git commit -m "Fix gallery cropping Instagram link and hero box"
+git commit -m "Show full gallery photos and remove menu note"
 git push origin main
 ```
