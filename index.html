@@ -28,6 +28,7 @@
   <nav class="site-nav">
     <a href="#menu">Menu</a>
     <a href="#gallery">Gallery</a>
+    <a href="#reviews">Reviews</a>
     <a href="#about">About</a>
     <a href="#order">How to order</a>
     <a class="nav-cta" href="#contact">Order now</a>
@@ -226,6 +227,171 @@
     </div>
   </section>
 
+
+  <section id="reviews" class="section reviews-section">
+    <div class="section-heading centered">
+      <p class="eyebrow">Customer reviews</p>
+      <h2>Sweet words from our customers.</h2>
+      <p>
+        Tried something from CakedByKim? Share your experience and help
+        someone else find their next obsession.
+      </p>
+    </div>
+
+    <div class="reviews-layout">
+      <div class="approved-reviews">
+        <div class="review-intro-card">
+          <div class="review-intro-stars" aria-hidden="true">★★★★★</div>
+          <h3>Your feedback means everything.</h3>
+          <p>
+            Approved customer reviews will be featured here. Every review is
+            checked before being published to protect customer privacy and
+            keep this space genuine.
+          </p>
+          <a class="button" href="#review-form">Leave a review</a>
+        </div>
+
+        <div class="review-empty-state">
+          <p class="script-label">Be part of the beginning</p>
+          <h3>Be one of the first to share your CakedByKim experience.</h3>
+          <p>
+            Tell us what you ordered, what you loved and how the desserts
+            made your celebration a little sweeter.
+          </p>
+        </div>
+      </div>
+
+      <form
+        id="review-form"
+        class="review-form"
+        action="https://formsubmit.co/orders@cakedbykim.com"
+        method="POST"
+      >
+        <input
+          type="hidden"
+          name="_subject"
+          value="New CakedByKim Customer Review"
+        >
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input
+          type="hidden"
+          name="_next"
+          value="https://cakedbykim.com/#reviews"
+        >
+
+        <div class="review-form-heading">
+          <p class="eyebrow">Leave a review</p>
+          <h3>How was your order?</h3>
+          <p>
+            Your review will be emailed to Kim for approval before it appears
+            publicly on the website.
+          </p>
+        </div>
+
+        <label>
+          Your name
+          <input
+            type="text"
+            name="customer_name"
+            autocomplete="name"
+            required
+          >
+        </label>
+
+        <label>
+          Email address
+          <input
+            type="email"
+            name="customer_email"
+            autocomplete="email"
+            required
+          >
+          <small>Your email will never be displayed publicly.</small>
+        </label>
+
+        <fieldset class="rating-field">
+          <legend>Your rating</legend>
+
+          <div class="star-rating">
+            <input type="radio" id="star5" name="rating" value="5 stars" required>
+            <label for="star5" title="5 stars">★</label>
+
+            <input type="radio" id="star4" name="rating" value="4 stars">
+            <label for="star4" title="4 stars">★</label>
+
+            <input type="radio" id="star3" name="rating" value="3 stars">
+            <label for="star3" title="3 stars">★</label>
+
+            <input type="radio" id="star2" name="rating" value="2 stars">
+            <label for="star2" title="2 stars">★</label>
+
+            <input type="radio" id="star1" name="rating" value="1 star">
+            <label for="star1" title="1 star">★</label>
+          </div>
+        </fieldset>
+
+        <label>
+          What did you order?
+          <select name="order_type" required>
+            <option value="" selected disabled>Select an order type</option>
+            <option>Cookies</option>
+            <option>Cupcakes</option>
+            <option>Cupcake cake</option>
+            <option>Mixed order</option>
+            <option>Custom order</option>
+            <option>Other</option>
+          </select>
+        </label>
+
+        <label>
+          Review title
+          <input
+            type="text"
+            name="review_title"
+            placeholder="Absolutely obsessed!"
+            maxlength="80"
+            required
+          >
+        </label>
+
+        <label>
+          Your review
+          <textarea
+            name="review"
+            rows="6"
+            maxlength="1000"
+            placeholder="Tell us what you loved about your order..."
+            required
+          ></textarea>
+        </label>
+
+        <label class="review-permission">
+          <input
+            type="checkbox"
+            name="permission_to_publish"
+            value="Yes, I give permission to publish this review"
+            required
+          >
+          <span>
+            I give CakedByKim permission to publish my review and first name
+            on the website and social media.
+          </span>
+        </label>
+
+        <button class="button review-submit" type="submit">
+          Submit my review
+        </button>
+
+        <p class="review-privacy-note">
+          Reviews are moderated before publication. Email addresses and order
+          details will not be displayed publicly.
+        </p>
+      </form>
+    </div>
+  </section>
+
+
   <section id="order" class="section order-section">
     <div class="section-heading centered">
       <p class="eyebrow">How to order</p>
@@ -282,6 +448,7 @@
   <div class="footer-links">
     <a href="#menu">Menu</a>
     <a href="#gallery">Gallery</a>
+    <a href="#reviews">Reviews</a>
     <a href="#contact">Order</a>
     <a href="https://www.instagram.com/__cakedbykim/" target="_blank" rel="noopener noreferrer">Instagram</a>
   </div>
