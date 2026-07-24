@@ -1414,3 +1414,21 @@ footer strong {
 }
 
 /* CUPCAKE MENU THUMBNAILS END */
+
+/* CUPCAKE THUMBNAIL FIT FIX START */
+
+#cupcakes .menu-photo {
+  object-fit: contain !important;
+  object-position: center !important;
+  background: #ffffff !important;
+  padding: 10px !important;
+  box-sizing: border-box !important;
+}
+
+@media (max-width: 700px) {
+  #cupcakes .menu-photo {
+    padding: 6px !important;
+  }
+}
+
+/* CUPCAKE THUMBNAIL FIT FIX END */
