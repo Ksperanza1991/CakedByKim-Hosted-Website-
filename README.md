@@ -1,39 +1,27 @@
-# CakedByKim Website v3
+# CakedByKim Website v4 — Original Style
 
-## Final product mapping used
-
-### Cookies
-- The OG — Brown Butter Chocolate Chip — `the-og.jpg`, cropped from the approved `hero.jpg`
-- The Favorite — White Chocolate Raspberry — `favorite-main.jpg` and approved supporting photo `favorite-alt.jpg`
-- The Obsession — Triple Chocolate Brownie — `the-obsession.jpg`, cropped from the approved `hero.jpg`
-- The Crunch — Cookies & Cream — temporary concept image until a real photo is provided
-- The Soft One — Vanilla Bean Sugar Cookie — `soft-one.jpg`, using the newly supplied photo
-
-### Cupcakes
-- The Classic — Vanilla Bean — cropped from `cupcake-box.jpg`
-- The Midnight — Chocolate Fudge — cropped from `cupcake-box.jpg`
-- The Dream — Strawberry Shortcake — `dream.jpg`, supplied as `strawberry-box.jpg`
-- The Crush — Lemon Strawberry — `lemon-strawberry.jpg`
-- The Bloom — Cookies & Cream — temporary concept image until a real photo is provided
-
-## Contact details
-- Order email: orders@cakedbykim.com
-- Instagram: https://www.instagram.com/__cakedbykim/
+This version returns to the clean original layout while keeping:
+- the new hero photo
+- the real CakedByKim logo
+- muted farmhouse colors
+- correct menu names and product-photo mapping
+- orders@cakedbykim.com
+- @__cakedbykim
 
 ## Deploy
-Replace the following files in the root of the existing GitHub repository:
 
-- `index.html`
-- `styles.css`
-- `script.js`
-- the entire `images` directory
+Copy these files to the repository root:
 
-Then commit and push:
+- index.html
+- styles.css
+- script.js
+- CNAME
+- images/
+
+Then run:
 
 ```bash
-git add index.html styles.css script.js images
-git commit -m "Redesign CakedByKim boutique bakery website"
+git add .
+git commit -m "Restore clean original CakedByKim layout"
 git push origin main
 ```
-
-GitHub Pages should automatically redeploy the site.
