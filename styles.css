@@ -1414,3 +1414,27 @@ footer strong {
 }
 
 /* CUPCAKE MENU THUMBNAILS END */
+
+/* EXTRAS MENU THUMBNAILS START */
+
+#extras .menu-photo {
+  display: block;
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  object-position: center;
+  border: 1px solid #d8d1c7;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 7px 18px rgba(42, 44, 43, 0.08);
+}
+
+@media (max-width: 700px) {
+  #extras .menu-photo {
+    width: 84px;
+    height: 84px;
+    border-radius: 14px;
+  }
+}
+
+/* EXTRAS MENU THUMBNAILS END */
