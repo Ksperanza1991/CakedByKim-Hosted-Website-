@@ -1852,3 +1852,44 @@ footer strong {
 }
 
 /* AUTOMATIC REVIEW FEED END */
+
+@media (max-width: 900px) {
+  .nav-links {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: min(78vw, 340px);
+    height: 100dvh;
+    padding: 120px 28px 40px;
+    background: #f4efe5;
+    display: flex !important;
+    flex-direction: column;
+    gap: 0;
+    transform: translateX(-105%);
+    transition: transform 0.28s ease;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(48, 54, 55, 0.12);
+    font-size: 28px;
+  }
+
+  body.menu-open .nav-links {
+    transform: translateX(0);
+  }
+
+  body > header,
+  body > main,
+  body > footer {
+    transition: transform 0.28s ease;
+  }
+
+  body.menu-open > header,
+  body.menu-open > main,
+  body.menu-open > footer {
+    transform: translateX(min(78vw, 340px));
+  }
+}
