@@ -1,16 +1,35 @@
-const menuToggle = document.querySelector('.menu-toggle');
-const navigation = document.querySelector('.site-nav');
+const menuToggle = document.querySelector(".menu-toggle");
+const navigation = document.querySelector(".site-nav");
 
-menuToggle.addEventListener('click', () => {
-  const isOpen = navigation.classList.toggle('open');
-  menuToggle.setAttribute('aria-expanded', String(isOpen));
+function closeMobileMenu() {
+  navigation.classList.remove("open");
+  document.body.classList.remove("menu-open");
+  menuToggle.setAttribute("aria-expanded", "false");
+}
+
+menuToggle.addEventListener("click", function (event) {
+  event.preventDefault();
+
+  const isOpen = !document.body.classList.contains("menu-open");
+
+  navigation.classList.toggle("open", isOpen);
+  document.body.classList.toggle("menu-open", isOpen);
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
 });
 
-navigation.querySelectorAll('a').forEach((link) => {
-  link.addEventListener('click', () => {
-    navigation.classList.remove('open');
-    menuToggle.setAttribute('aria-expanded', 'false');
-  });
+navigation.querySelectorAll("a").forEach(function (link) {
+  link.addEventListener("click", closeMobileMenu);
+});
+
+window.addEventListener(
+  "scroll",
+  function () {
+    if (document.body.classList.contains("menu-open")) {
+      closeMobileMenu();
+    }
+  },
+  { passive: true }
+);
 });
 
 document.querySelectorAll('.menu-tab').forEach((tab) => {
@@ -160,35 +179,3 @@ document.getElementById('year').textContent = new Date().getFullYear();
 })();
 
 /* AUTOMATIC APPROVED REVIEWS END */
-document.addEventListener("DOMContentLoaded", function () {
-  const toggle = document.querySelector(".menu-toggle");
-  const nav = document.querySelector(".nav-links");
-
-  if (!toggle || !nav) return;
-
-  function closeMenu() {
-    document.body.classList.remove("menu-open");
-    toggle.setAttribute("aria-expanded", "false");
-  }
-
-  toggle.onclick = function (event) {
-    event.preventDefault();
-
-    const isOpen = document.body.classList.toggle("menu-open");
-    toggle.setAttribute("aria-expanded", String(isOpen));
-  };
-
-  nav.querySelectorAll("a").forEach(function (link) {
-    link.addEventListener("click", closeMenu);
-  });
-
-  window.addEventListener(
-    "scroll",
-    function () {
-      if (document.body.classList.contains("menu-open")) {
-        closeMenu();
-      }
-    },
-    { passive: true }
-  );
-});
