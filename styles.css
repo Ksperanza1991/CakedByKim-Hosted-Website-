@@ -2148,3 +2148,138 @@ footer strong {
 /* =========================================================
    END CAKEDBYKIM CLEAN MOBILE MENU
    ========================================================= */
+
+/* =========================================================
+   MOBILE MENU VIEWPORT POSITION FIX
+   ========================================================= */
+
+@media (max-width: 950px) {
+  html {
+    overflow-x: hidden !important;
+  }
+
+  body {
+    position: relative !important;
+    width: 100% !important;
+    overflow-x: hidden !important;
+    transform: none !important;
+  }
+
+  body.menu-open {
+    overflow: hidden !important;
+    transform: none !important;
+  }
+
+  /*
+   * Backdrop filters can cause fixed descendants to position
+   * relative to the header instead of the phone viewport.
+   */
+  .site-header {
+    position: sticky !important;
+    top: 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    transform: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  /*
+   * Cancel every previous drawer rule that shifted the page.
+   */
+  .site-header .brand,
+  .site-header .menu-toggle,
+  body > main,
+  body > footer,
+  body.menu-open .site-header,
+  body.menu-open .site-header .brand,
+  body.menu-open .site-header .menu-toggle,
+  body.menu-open > main,
+  body.menu-open > footer {
+    transform: none !important;
+  }
+
+  .site-nav {
+    position: fixed !important;
+    top: 82px !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+
+    z-index: 9999 !important;
+
+    display: flex !important;
+    width: 100vw !important;
+    max-width: none !important;
+    height: calc(100dvh - 82px) !important;
+
+    margin: 0 !important;
+    padding: 25px 25px 60px !important;
+
+    flex-direction: column !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+    gap: 0 !important;
+
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+
+    background: #fffdfa !important;
+    box-shadow: none !important;
+
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+
+    transform: translate3d(100vw, 0, 0) !important;
+    transition:
+      transform 0.28s ease,
+      opacity 0.2s ease,
+      visibility 0.2s ease !important;
+  }
+
+  .site-nav.open,
+  body.menu-open .site-nav {
+    right: 0 !important;
+    left: 0 !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+
+    transform: translate3d(0, 0, 0) !important;
+  }
+
+  .site-nav a {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 18px 4px !important;
+
+    border-bottom: 1px solid rgba(48, 54, 55, 0.14) !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+
+    color: #303637 !important;
+    font-size: 24px !important;
+    line-height: 1.2 !important;
+    text-align: left !important;
+  }
+
+  .site-nav .nav-cta {
+    margin-top: 18px !important;
+    padding: 15px 20px !important;
+    border-bottom: 0 !important;
+    border-radius: 999px !important;
+    background: var(--sage) !important;
+    text-align: center !important;
+  }
+
+  .mobile-menu-overlay {
+    display: none !important;
+  }
+}
+
+/* =========================================================
+   END MOBILE MENU VIEWPORT POSITION FIX
+   ========================================================= */
