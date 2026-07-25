@@ -160,3 +160,35 @@ document.getElementById('year').textContent = new Date().getFullYear();
 })();
 
 /* AUTOMATIC APPROVED REVIEWS END */
+document.addEventListener("DOMContentLoaded", function () {
+  const toggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".nav-links");
+
+  if (!toggle || !nav) return;
+
+  function closeMenu() {
+    document.body.classList.remove("menu-open");
+    toggle.setAttribute("aria-expanded", "false");
+  }
+
+  toggle.onclick = function (event) {
+    event.preventDefault();
+
+    const isOpen = document.body.classList.toggle("menu-open");
+    toggle.setAttribute("aria-expanded", String(isOpen));
+  };
+
+  nav.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", closeMenu);
+  });
+
+  window.addEventListener(
+    "scroll",
+    function () {
+      if (document.body.classList.contains("menu-open")) {
+        closeMenu();
+      }
+    },
+    { passive: true }
+  );
+});
