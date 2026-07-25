@@ -1893,3 +1893,135 @@ footer strong {
     transform: translateX(min(78vw, 340px));
   }
 }
+/* =========================================================
+   CAKEDBYKIM MOBILE PUSH MENU — FINAL OVERRIDE
+   ========================================================= */
+
+@media (max-width: 950px) {
+  :root {
+    --cbk-mobile-menu-width: min(78vw, 340px);
+  }
+
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    position: relative;
+  }
+
+  /*
+   * Mobile navigation drawer
+   */
+  .site-nav {
+    position: fixed !important;
+    top: 0 !important;
+    right: auto !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    z-index: 9999 !important;
+
+    display: flex !important;
+    width: var(--cbk-mobile-menu-width) !important;
+    height: 100dvh !important;
+
+    margin: 0 !important;
+    padding:
+      calc(env(safe-area-inset-top, 0px) + 105px)
+      28px
+      calc(env(safe-area-inset-bottom, 0px) + 40px) !important;
+
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    gap: 0 !important;
+
+    overflow-y: auto !important;
+
+    background: #f4efe5 !important;
+    border-right: 1px solid rgba(48, 54, 55, 0.12);
+    box-shadow: 18px 0 48px rgba(35, 39, 39, 0.16);
+
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+
+    transform: translateX(-105%) !important;
+    transition: transform 0.28s ease !important;
+  }
+
+  /*
+   * Open state
+   */
+  .site-nav.open,
+  body.menu-open .site-nav {
+    transform: translateX(0) !important;
+  }
+
+  /*
+   * Menu links
+   */
+  .site-nav a {
+    display: block !important;
+    width: 100% !important;
+
+    margin: 0 !important;
+    padding: 18px 0 !important;
+
+    border-bottom: 1px solid rgba(48, 54, 55, 0.12);
+
+    color: #303637 !important;
+    font-size: clamp(24px, 7vw, 30px) !important;
+    font-weight: 700 !important;
+    line-height: 1.15 !important;
+    text-align: left !important;
+    text-decoration: none !important;
+  }
+
+  .site-nav a:hover,
+  .site-nav a:focus-visible {
+    color: #6e837b !important;
+  }
+
+  /*
+   * Keep hamburger above the drawer
+   */
+  .menu-toggle {
+    position: relative !important;
+    z-index: 10001 !important;
+  }
+
+  /*
+   * Smooth page movement
+   */
+  .site-header,
+  body > main,
+  body > footer {
+    transition: transform 0.28s ease !important;
+    will-change: transform;
+  }
+
+  /*
+   * Push the entire visible website to the right
+   */
+  body.menu-open .site-header,
+  body.menu-open > main,
+  body.menu-open > footer {
+    transform: translateX(
+      var(--cbk-mobile-menu-width)
+    ) !important;
+  }
+
+  /*
+   * Prevent older navigation styles from expanding over the page
+   */
+  body:not(.menu-open) .site-nav {
+    transform: translateX(-105%) !important;
+  }
+}
+
+/* =========================================================
+   END CAKEDBYKIM MOBILE PUSH MENU
+   ========================================================= */
